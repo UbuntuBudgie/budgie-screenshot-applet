@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+override_dh_install:
+	# Remove .la files
+	find debian/budgie-screenshot-applet/usr/lib/ -type f -name "*.la" -delete
+	dh_install --list-missing
+	
+override_dh_auto_configure:
+	dh_auto_configure -- --libdir=/usr/lib/
+
+%:
+	dh $@ --with autoreconf
