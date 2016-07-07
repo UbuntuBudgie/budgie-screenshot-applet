@@ -1,3 +1,27 @@
+screenshot-applet (0.3.4-0ubuntu1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- David Mohammed <foss.freedom@gmail.com>  Thu, 07 Jul 2016 19:43:19 +0100
+
+screenshot-applet (0.3.3-0ubuntu1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- David Mohammed <foss.freedom@gmail.com>  Sat, 02 Jul 2016 09:59:18 +0100
+
+screenshot-applet (0.3.2-0ubuntu3) xenial; urgency=medium
+
+  * add another missing build dependency
+
+ -- David Mohammed <foss.freedom@gmail.com>  Fri, 01 Jul 2016 20:12:39 +0100
+
+screenshot-applet (0.3.2-0ubuntu2) xenial; urgency=medium
+
+  * add missing build dependency
+
+ -- David Mohammed <foss.freedom@gmail.com>  Fri, 01 Jul 2016 20:04:53 +0100
+
 screenshot-applet (0.3.2-0ubuntu1) xenial; urgency=low
 
   * Initial Release

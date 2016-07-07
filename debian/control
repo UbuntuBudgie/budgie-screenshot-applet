@@ -9,6 +9,8 @@ Build-Depends: debhelper (>= 9),
  libpeas-dev,
  valac,
  gir1.2-budgie-desktop-1.0,
+ budgie-core-dev,
+ libbudgie-plugin0,
  libjson-glib-dev,
  libnotify-dev,
  librest-dev
