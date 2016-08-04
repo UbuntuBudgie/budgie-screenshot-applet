@@ -1,3 +1,9 @@
+screenshot-applet (0.3.7-0ubuntu1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 04 Aug 2016 19:47:52 +0100
+
 screenshot-applet (0.3.5-0ubuntu1) xenial; urgency=medium
 
   * new upstream release
