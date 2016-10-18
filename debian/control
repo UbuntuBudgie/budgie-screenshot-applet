@@ -1,4 +1,4 @@
-Source: screenshot-applet
+Source: budgie-screenshot-applet
 Section: misc
 Priority: optional
 Maintainer: David Mohammed <fossfreedom@ubuntu.com>
@@ -13,11 +13,12 @@ Build-Depends: debhelper (>= 9),
  libbudgie-plugin0,
  libjson-glib-dev,
  libnotify-dev,
- librest-dev
+ librest-dev,
+ libgnome-desktop-3-dev
 Standards-Version: 3.9.7
-Vcs-Browser: https://github.com/budgie-remix/screenshot-applet/tree/debian
-Vcs-Git: https://github.com/budgie-remix/screenshot-applet -b debian
-Homepage: https://github.com/cybre/screenshot-applet
+Vcs-Browser: https://github.com/budgie-remix/budgie-screenshot-applet/tree/debian
+Vcs-Git: https://github.com/budgie-remix/budgie-screenshot-applet -b debian
+Homepage: https://github.com/cybre/budgie-screenshot-applet
 
 
 Package: budgie-screenshot-applet
