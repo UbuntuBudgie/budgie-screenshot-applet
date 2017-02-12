@@ -3,18 +3,15 @@ Section: misc
 Priority: optional
 Maintainer: David Mohammed <fossfreedom@ubuntu.com>
 Build-Depends: debhelper (>= 9),
- dh-autoreconf,
  gobject-introspection,
  libgtk-3-dev,
- libpeas-dev,
  valac,
- gir1.2-budgie-desktop-1.0,
  budgie-core-dev,
  libbudgie-plugin0,
  libjson-glib-dev,
- libnotify-dev,
- librest-dev,
- libgnome-desktop-3-dev
+ libgnome-desktop-3-dev,
+ meson,
+ libsoup2.4-dev
 Standards-Version: 3.9.7
 Vcs-Browser: https://github.com/budgie-remix/budgie-screenshot-applet/tree/debian
 Vcs-Git: https://github.com/budgie-remix/budgie-screenshot-applet -b debian

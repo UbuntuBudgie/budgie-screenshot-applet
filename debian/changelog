@@ -1,3 +1,9 @@
+budgie-screenshot-applet (0.4.1-0ubuntu1) zesty; urgency=medium
+
+  * meson rebuild
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Sun, 12 Feb 2017 20:28:29 +0000
+
 budgie-screenshot-applet (0.3.9-0ubuntu2) xenial; urgency=medium
 
   * add libgnome-desktop-3-dev as a build dependency

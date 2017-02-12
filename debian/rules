@@ -1,12 +1,30 @@
 #!/usr/bin/make -f
-
-override_dh_install:
-	# Remove .la files
-	find debian/budgie-screenshot-applet/usr/lib/ -type f -name "*.la" -delete
-	dh_install --list-missing
-	
-override_dh_auto_configure:
-	dh_auto_configure -- --libdir=/usr/lib/
+export DH_VERBOSE = 1
+export MAKE = ninja -v
+export DEB_BUILD_MAINT_OPTIONS = hardening=+relro,+bindnow
+export DEB_CFLAGS_MAINT_APPEND = -fPIC
+export DEB_CPPFLAGS_MAINT_APPEND = -fPIC
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
-	dh $@ --with autoreconf
+	dh $@ 
+
+override_dh_auto_configure:
+	mkdir build && meson --prefix /usr --libdir /usr/lib . build
+
+#override_dh_auto_configure:
+#	mkdir build && meson --buildtype plain --prefix /usr \
+#	               -Ddo-post-install=false \
+#	               -Db_lundef=false
+	               
+#override_dh_auto_build:
+#	$(MAKE) -C build all
+
+override_dh_auto_build:
+	$(MAKE) -C build
+
+override_dh_auto_clean:
+	rm -rf build
+
+override_dh_auto_install:
+	DESTDIR=$(CURDIR)/debian/tmp $(MAKE) -C build install
