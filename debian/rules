@@ -10,7 +10,8 @@ export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 	dh $@ 
 
 override_dh_auto_configure:
-	mkdir build && meson --prefix /usr --libdir /usr/lib . build
+	mkdir -p build
+	cd build && meson --prefix=/usr --libdir=/usr/lib ..
 
 #override_dh_auto_configure:
 #	mkdir build && meson --buildtype plain --prefix /usr \
@@ -21,10 +22,10 @@ override_dh_auto_configure:
 #	$(MAKE) -C build all
 
 override_dh_auto_build:
-	$(MAKE) -C build
+	cd build && $(MAKE)
 
 override_dh_auto_clean:
 	rm -rf build
 
 override_dh_auto_install:
-	DESTDIR=$(CURDIR)/debian/tmp $(MAKE) -C build install
+	cd build && DESTDIR=$(CURDIR)/debian/tmp $(MAKE) install
