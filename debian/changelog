@@ -1,18 +1,5 @@
-budgie-screenshot-applet (0.4.1-0ubuntu1) zesty; urgency=medium
+budgie-screenshot-applet (0.4.2-1) unstable; urgency=medium
 
-  * meson rebuild
+  * Initial Release (Closes: #xxxxxx)
 
- -- David Mohammed <fossfreedom@ubuntu.com>  Sun, 12 Feb 2017 20:28:29 +0000
-
-budgie-screenshot-applet (0.3.9-0ubuntu2) xenial; urgency=medium
-
-  * add libgnome-desktop-3-dev as a build dependency
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Tue, 18 Oct 2016 21:24:58 +0100
-
-budgie-screenshot-applet (0.3.9-0ubuntu1) xenial; urgency=medium
-
-  * new upstream release
-  * package rename
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Tue, 18 Oct 2016 21:09:36 +0100
+ -- David Mohammed <fossfreedom@ubuntu.com>  Fri, 12 May 2017 21:09:36 +0100
