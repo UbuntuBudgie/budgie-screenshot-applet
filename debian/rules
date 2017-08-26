@@ -13,6 +13,14 @@ override_dh_auto_configure:
 	mkdir -p build
 	cd build && meson --prefix=/usr --libdir=/usr/lib ..
 
+#override_dh_auto_configure:
+#	mkdir build && meson --buildtype plain --prefix /usr \
+#	               -Ddo-post-install=false \
+#	               -Db_lundef=false
+	               
+#override_dh_auto_build:
+#	$(MAKE) -C build all
+
 override_dh_auto_build:
 	cd build && $(MAKE)
 
